@@ -1,0 +1,60 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+
+*{
+    margin: 0;
+}
+
+body{
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html{
+    scroll-snap-type:y mandatory;
+}
+
+section{
+    height: 100vh;
+    scroll-snap-align: start;
+    padding: 20 100;
+}
+
+#banner{
+    background-image: url("images/star.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat; 
+    font-family: 'Exo';
+    padding: 40vh 100;
+    background-position: center; /* Center the background image */
+    width: 100%;
+    height: 100vh;
+    
+            
+    /* padding: 100px; */
+}
+
+#banner h1{
+    font-size: 34px;
+ }
+#banner p{
+   max-width: 600px;
+   margin-top: 20px;
+   font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    /* Apply these styles when the screen width is 600px or less */
+    #banner {/* Smaller top padding for smaller screens */
+        padding-left: 25px;
+        padding-right: 25px; /* Smaller left padding for smaller screens */
+    }
+
+    #banner p{
+        max-width: auto;
+        text-align: justify;
+     }
+}
